@@ -179,10 +179,6 @@ Other fields act as filters.
 - [ ] Provide real-time log ingestion and searching capabilities. Can be implemented using websockets and refreshing the result whenever the server emits an event. We just upgrade to web socket protocol from HTTP (can use gorilla/websockets) and then, specify events that server and client listens to.
 - [ ] Implement role-based access to the query interface. Can be implemented by creating an authentication process with role assigned by an admin, and adding a middleware function before the search route to check whether that specific role can specify certain filters or not.
 
-I know it's easier said than done, but my major examinations start on Monday, that's why I wasn't able to implement the last two features.
-
-However, I have implemented websockets and authentication with role-based restrictions in Golang in my other project Golang-Chat-App (https://github.com/pawarpranav83/golang-chat).
-
 Also have created a **Dockerfile** so that the image can be used in various cloud-based solutions for scaling up.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
