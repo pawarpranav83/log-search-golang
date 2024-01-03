@@ -176,10 +176,6 @@ Other fields act as filters.
 ### Advance Features
 - [x] Implement search within specific date ranges. Using gte and lte operators in match stage for timestamp. Also timestamp is stored as value using time.Parse method in golang.
 - [x] Allow combining multiple filters. Multiple filters can be combined, if not null those fields are added in the match stage filters. Combined using AND operator.
-- [ ] Provide real-time log ingestion and searching capabilities. Can be implemented using websockets and refreshing the result whenever the server emits an event. We just upgrade to web socket protocol from HTTP (can use gorilla/websockets) and then, specify events that server and client listens to.
-- [ ] Implement role-based access to the query interface. Can be implemented by creating an authentication process with role assigned by an admin, and adding a middleware function before the search route to check whether that specific role can specify certain filters or not.
-
-Also have created a **Dockerfile** so that the image can be used in various cloud-based solutions for scaling up.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
